@@ -68,7 +68,7 @@ const day = randomInteger(31);
 switch (true) {
     case (day <= 10): console.log(`${day} is in first decade.`);
         break;
-    case (day <= 20): console.log(`${day} is in second decade.`);
+    case (day <= 20) && (day > 10): console.log(`${day} is in second decade.`);
         break;
     case (day > 20): console.log(`${day} is in third decade.`);
         break;
